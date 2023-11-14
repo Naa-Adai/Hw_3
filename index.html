@@ -1,0 +1,53 @@
+<!--
+File: index.html
+GUI Assignment: multiplication table
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2023 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MULTIPLICATION TABLE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="first">
+            <h2 id="h2">ENTER 4 NUMBERS!!!</h2>
+                <table class="fav-table">
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>INPUT HERE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="1n" >Starting Vertical Number</td>
+                            <td><input type="text" id="firstNum" name="firstNum"></td>
+                        </tr>
+                        <tr>
+                            <td id="2n">Ending Vertical Number</td>
+                            <td><input type="text" id="secondNum" name="secondNum"></td>
+                        </tr>
+                        <tr>
+                            <td id="3n">Starting Horizontal Number</td>
+                            <td><input type="text" id="thirdNum" name="thirdNum"></td>
+                        </tr>
+                        <tr>
+                            <td id="4n">Ending Horizontal Number</td>
+                            <td><input type="text" id="forthNum" name="forthNum"></td>
+                            </tr>
+                    </tbody>
+            </table>
+            <button type="submit" onclick="myFunction()" id= "button" >ENTER</button>
+            <div class="scroll">
+            <table id="output" align="center">
+            </table> 
+            </div>
+        </div>
+        <script type="text/javascript" src="multiply.js"></script>
+    </body>
+</html>
